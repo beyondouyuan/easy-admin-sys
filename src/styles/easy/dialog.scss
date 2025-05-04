@@ -1,0 +1,31 @@
+$Dialog: '.easy';
+
+#{$Dialog} {
+  &-dialog {
+    &--scrollbar {
+      &.el-dialog {
+        padding-right: 0 !important;
+        .el-dialog__body {
+          max-height: 62.5vh;
+          overflow-y: auto;
+          padding-right: var(--easy-base-space) !important;
+          @include scrollBar;
+        }
+        .el-dialog__footer {
+          padding-right: var(--easy-base-space) !important;
+        }
+      }
+    }
+
+    &--footer--top-border {
+      .el-dialog__footer {
+        border-top: var(--easy-border-width) solid var(--vt-c-divider-light-2);
+      }
+    }
+    &--header--bottom-border {
+      .el-dialog__header {
+        border-bottom: var(--easy-border-width) solid var(--vt-c-divider-light-2);
+      }
+    }
+  }
+}

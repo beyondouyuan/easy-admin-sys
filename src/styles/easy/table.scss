@@ -1,0 +1,20 @@
+$Table: '.easy';
+
+#{$Table} {
+  &-table {
+    &__header-inner {
+      font-size: var(--easy-font-12);
+      color: var(--vt-c-black);
+    }
+  }
+
+  &-api-table {
+    &__pagination {
+      margin-top: calc(var(--easy-base-space) * 2);
+    }
+
+    &__toolbar {
+      margin-bottom: calc(var(--easy-base-space) * 2);
+    }
+  }
+}

@@ -1,0 +1,121 @@
+export default {
+  path: '/statistical',
+  name: 'statistical',
+  parentPath: '/',
+  redirect: '/statistical/reconciliation',
+  icon: '',
+  order: 50,
+  children: [
+    {
+      path: 'reconciliation',
+      name: 'reconciliation',
+      parentPath: '/statistical',
+      icon: '',
+    },
+    {
+      path: 'environment',
+      name: 'environment',
+      parentPath: '/statistical',
+      icon: '',
+    },
+    {
+      path: 'anomaly',
+      name: 'anomaly',
+      parentPath: '/statistical',
+      icon: '',
+    },
+    {
+      path: 'speed',
+      name: 'speed',
+      parentPath: '/statistical',
+      icon: '',
+    },
+    {
+      path: 'bill',
+      name: 'bill',
+      parentPath: '/statistical',
+      redirect: '/statistical/bill/user',
+      icon: '',
+      children: [
+        {
+          path: 'user',
+          name: 'user',
+          parentPath: '/statistical/bill',
+          icon: '',
+        },
+        {
+          path: 'department',
+          name: 'department',
+          parentPath: '/statistical/bill',
+          icon: '',
+        },
+        {
+          path: 'device',
+          name: 'device',
+          parentPath: '/statistical/bill',
+          icon: '',
+        },
+        {
+          path: 'project',
+          name: 'project',
+          parentPath: '/statistical/bill',
+          icon: '',
+        },
+      ],
+    },
+    {
+      path: 'analysis',
+      name: 'analysis',
+      parentPath: '/statistical',
+      redirect: '/statistical/analysis/colour',
+      icon: '',
+      children: [
+        {
+          path: 'colour',
+          name: 'colour',
+          parentPath: '/statistical/analysis',
+          icon: '',
+        },
+        {
+          path: 'quota',
+          name: 'quota',
+          parentPath: '/statistical/analysis',
+          icon: '',
+        },
+        {
+          path: 'double',
+          name: 'double',
+          parentPath: '/statistical/analysis',
+          icon: '',
+        },
+        {
+          path: 'compare',
+          name: 'compare',
+          parentPath: '/statistical/analysis',
+          icon: '',
+        },
+        {
+          path: 'cancel',
+          name: 'cancel',
+          parentPath: '/statistical/analysis',
+          icon: '',
+        },
+      ],
+    },
+    {
+      path: 'device',
+      name: 'device',
+      parentPath: '/statistical',
+      redirect: '/statistical/device/use',
+      icon: '',
+      children: [
+        {
+          path: 'use',
+          name: 'use',
+          parentPath: '/statistical/device',
+          icon: '',
+        },
+      ],
+    },
+  ],
+}

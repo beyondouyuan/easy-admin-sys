@@ -1,0 +1,10 @@
+$Menu: '.easy';
+
+#{$Menu} {
+  &-scrollbar {
+    background-color: var(--vt-c-white);
+  }
+  &-menu {
+    border-right: 0 !important;
+  }
+}

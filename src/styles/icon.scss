@@ -1,0 +1,121 @@
+$component: '.icon';
+
+#{$component} {
+  &-color {
+    &--android {
+      color: var(--easy-color-android);
+    }
+
+    &--ios {
+      color: var(--easy-color-ios);
+    }
+
+    &--quickapp {
+      color: var(--easy-color-quickapp);
+    }
+
+    &--h5 {
+      color: var(--easy-color-h5);
+    }
+
+    &--harmony {
+      color: var(--easy-color-harmony);
+    }
+
+    &--tips,
+    &--gray {
+      color: var(--easy-color-gray);
+    }
+
+    &--warning {
+      color: var(--easy-color-warning);
+    }
+
+    &--success {
+      color: var(--easy-color-success);
+    }
+
+    &--error {
+      color: var(--easy-color-danger);
+    }
+
+    &--primary {
+      color: var(--easy-color-primary);
+    }
+
+    &--ios-white {
+      color: var(--vt-c-white);
+    }
+
+    &--s2s {
+      color: var(--easy-color-primary);
+    }
+
+    &--c2s {
+      color: var(--easy-color-c2s);
+    }
+
+    &--est {
+      color: var(--easy-color-warning);
+    }
+
+    &--ab-test {
+      color: var(--easy-color-success);
+    }
+
+    &--robot {
+      color: var(--easy-color-primary);
+    }
+
+    &--robot-danger {
+      color: var(--easy-color-danger);
+    }
+  }
+
+  &-size {
+    &--xxs {
+      font-size: var(--easy-font-12);
+    }
+
+    &--xs {
+      font-size: var(--easy-font-14);
+    }
+
+    &--s {
+      font-size: var(--easy-font-16);
+    }
+
+    &--m {
+      font-size: var(--easy-font-18);
+    }
+
+    &--l {
+      font-size: var(--easy-font-24);
+    }
+
+    &--xl {
+      font-size: var(--easy-font-28);
+    }
+
+    &--img {
+      width: 1em;
+    }
+  }
+
+  &-anchor {
+    // icon position in prefix
+    &--prefix {
+      margin-right: calc(var(--easy-base-space) / 2);
+    }
+
+    // icon position in suffix
+    &--suffix {
+      margin-left: calc(var(--easy-base-space) / 2);
+    }
+
+    // icon position in center
+    &--center {
+      margin: 0 calc(var(--easy-base-space) / 2)
+    }
+  }
+}

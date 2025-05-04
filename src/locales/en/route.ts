@@ -1,0 +1,82 @@
+// 路由
+export default {
+  dashboard: 'Dashboard',
+  demo: 'Demo',
+  signboard: {
+    title: 'Board',
+    system: 'System Board',
+    cockpit: 'Cockpit Board',
+    printed: 'Printed Board',
+    device: 'Device Board',
+  },
+  task: {
+    title: 'Task',
+    personal: 'Personal Task',
+    scan: 'Mine Scan',
+    history: 'History Task',
+    profile: 'User Profile',
+  },
+  devices: {
+    title: 'Devices management',
+    list: 'List',
+    group: 'Device Group',
+    model: 'Device Model',
+    auth: 'Device Auth',
+  },
+  org: {
+    title: 'Org',
+    department: 'Department',
+    role: 'Role',
+    enterprise: 'Enterprise',
+    sync: {
+      title: 'Vender Sync',
+      ad: 'Ad Sync',
+    },
+  },
+  statistical: {
+    title: 'Statistical',
+    reconciliation: 'Reconciliation',
+    environment: 'Environment',
+    anomaly: 'Enomaly',
+    speed: 'Speed',
+    bill: {
+      title: 'Bill',
+      user: 'User',
+      department: 'Department',
+      device: 'Device',
+      project: 'Project',
+    },
+    analysis: {
+      title: 'Analysis',
+      colour: 'Colour',
+      quota: 'Quota',
+      double: 'Double',
+      compare: 'Compare',
+      cancel: 'Cancel',
+    },
+    device: {
+      title: 'Device',
+      use: 'Use',
+    },
+  },
+  billing: {
+    title: 'Billing',
+    standard: 'Standard',
+    rule: 'Rule',
+  },
+  safety: {
+    title: 'Safety',
+    mandatory: 'Mandatory',
+    rule: 'Rule',
+    secret: 'Secret',
+  },
+  system: {
+    title: 'System',
+    log: 'Log',
+    params: 'Params Configure',
+    menu: 'Menu',
+    mail: 'Mail',
+    customization: 'Customization',
+    authorization: 'Authorization',
+  },
+}

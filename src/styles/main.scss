@@ -1,0 +1,41 @@
+#app {
+  width: 100%;
+  min-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: normal;
+  background-color: var(--vt-c-white-mute);
+}
+
+.pointer {
+  cursor: pointer;
+}
+.w-full {
+  width: 100%;
+}
+.w-hidden {
+  @extend .w-full;
+  overflow: hidden;
+}
+.h-full {
+  height: 100%;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.fade-transform-enter-from {
+  opacity: 0;
+  transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+  transform: translateX(30px);
+}

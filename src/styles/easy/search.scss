@@ -1,0 +1,43 @@
+$Search: '.easy';
+$gap: calc(var(--easy-base-space) / 2);
+
+#{$Search} {
+  &-search {
+    &__toolbar {
+      @extend.flex-justify-end;
+      @extend.flex-1;
+      padding: $gap;
+    }
+  }
+
+  &-search-container {
+
+    &__item {
+      width: 20%;
+      padding: $gap;
+    }
+  }
+
+  &-api-search {
+    &__label {
+      width: calc(var(--easy-label-width) - var(--easy-base-space) * 2);
+      height: var(--easy-height-42);
+      padding: calc(var(--easy-base-space) / 2);
+    }
+  }
+}
+
+// ex: 1024|1280|1366|1440|1680|1920
+@media (max-width: 1680px) {
+  #{$Search} {
+    &-search-container {
+      &__item {
+        width: 25%;
+      }
+    }
+  }
+
+  :is(.easy-layout--expand .kanban-board--expand .easy-search-container__item) {
+    width: 33.33%;
+  }
+}

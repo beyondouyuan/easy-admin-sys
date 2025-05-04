@@ -1,0 +1,29 @@
+$Global: '.easy';
+
+#{$Global} {
+
+  &-space-base--left {
+    margin-left: var(--easy-base-space);
+  }
+
+  &-space-base--right {
+    margin-right: var(--easy-base-space);
+  }
+
+  &-space-base--top {
+    margin-top: var(--easy-base-space);
+  }
+
+  &-space-base--bottom {
+    margin-bottom: var(--easy-base-space);
+  }
+
+  &-space-base--wing {
+    margin: 0 var(--easy-base-space);
+  }
+
+  &-y--scrollbar {
+    overflow-y: auto;
+    @include scrollBar;
+  }
+}

@@ -1,0 +1,56 @@
+$xxs: var(--easy-font-12);
+$xs: var(--easy-font-14);
+$s: var(--easy-font-16);
+$m: var(--easy-font-18);
+$l: var(--easy-font-24);
+$xl: var(--easy-font-28);
+$xxl: var(--easy-font-28);
+$sizes: $xxs,
+$xs,
+$s,
+$m,
+$l,
+$xl,
+$xxl;
+$size-names: h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+xxl;
+// txt-h6 { font-size: $xxs; }
+@include create-iteration(txt, font-size, $size-names, $sizes);
+
+.txt-ellipsis {
+  @include ellipsis
+}
+
+.txt-underline {
+  text-decoration: none;
+  border-bottom: var(--easy-border-width) solid currentColor;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.txt-font-medium {
+  font-weight: 500;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.txt-break-word {
+  word-break: break-word;
+}

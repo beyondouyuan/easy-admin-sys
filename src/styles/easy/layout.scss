@@ -1,0 +1,89 @@
+$Layout: '.easy';
+
+#{$Layout} {
+  &-layout {
+    &_header {
+      padding-right: var(--easy-base-space);
+      height: var(--easy-header-height);
+      background-color: var(--vt-c-white);
+
+      &--nav {
+        padding: 0 var(--easy-base-space);
+        border-bottom-right-radius: var(--easy-border-radius);
+        background-color: var(--vt-c-white);
+
+        &_list {
+          >div {
+            margin-left: var(--easy-base-space);
+          }
+
+          .avatar {
+            width: calc(var(--easy-base-space) * 3);
+            height: calc(var(--easy-base-space) * 3);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    &_sidebar {
+      width: var(--easy-menu-width);
+      transition: width 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
+      background-color: var(--vt-c-white-mute);
+      border-right: 1px solid var(--vt-c-divider-light-2);
+      ;
+    }
+
+    &_logo {
+      transition: all 150ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      // background: var(--vt-c-white) url('@/assets/images/logo/logo.svg') no-repeat 50% / contain;
+      height: var(--easy-header-height);
+      background-color: var(--vt-c-white);
+
+      .img {
+        width: 40px;
+        height: 40px;
+        background: url('@/assets/images/logo/logo.svg') no-repeat 50% / contain;
+      }
+    }
+
+    &_body {
+      @extend .flex-y;
+      flex: 1;
+      color: var(--vt-c-black-soft);
+      overflow: hidden;
+      border-top-right-radius: var(--easy-border-radius);
+      border-bottom-right-radius: var(--easy-border-radius);
+      background-color: var(--vt-c-white-mute);
+    }
+
+    &--collapse {
+      #{$Layout}-layout_sidebar {
+        width: var(--easy-menu-width-mini);
+      }
+
+      // #{$Layout}-layout_logo {
+      //   background: var(--vt-c-white) url('@/assets/images/logo/logo-mini.svg') no-repeat 50% / contain;
+      // }
+    }
+  }
+
+  &-page {
+    @extend .flex-y;
+    @extend .flex-1;
+    padding: var(--easy-base-space);
+    border-radius: var(--easy-border-radius);
+    scroll-behavior: smooth;
+
+    &__scrollbar {
+      display: block;
+      overflow-y: auto;
+      @include scrollBar;
+    }
+
+    &__fullscreen {
+      height: calc(100% - var(--easy-header-height) - var(--easy-base-space) * 2);
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f0f2f5;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+  --vt-c-gray: #e2e5ea;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  --vt-c-divider-dark-3: rgba(84, 84, 84, 0.30);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --vt-c-green: rgba(8, 139, 95, 1);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-white-soft: var(--vt-c-white-soft);
+  --color-background-white-mute: var(--vt-c-white-mute);
+  --color-background-black-soft: var(--vt-c-black-soft);
+  --color-background-black-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-light);
+  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-border-success: #b7eb8f;
+  --color-border-danger: #ffa39e;
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --easy-color-global: #212529;
+  --easy-color-primary: rgba(62, 102, 235, 1);
+  --easy-color-primary-light: rgba(62, 102, 235, .1);
+  --easy-color-success: rgba(82, 196, 26, 1);
+  --easy-color-warning: rgba(247, 181, 0, 1);
+  --easy-color-danger: rgba(255, 77, 79, 1);
+  --easy-color-gray: rgba(0, 0, 0, 0.25);
+  --easy-color-hover: rgba(0, 0, 0, 0.04);
+  --easy-color-sub-head: #818181;
+  --easy-color-txt-base: rgba(0, 0, 0, 0.85);
+  --easy-color-txt-sub-base: rgba(0, 0, 0, 0.65);
+  --easy-color-txt-mute-base: rgba(0, 0, 0, 0.45);
+  --easy-color-txt-mute-light: rgba(0, 0, 0, 0.25);
+
+  --easy-color-c2s: #0ecfcf;
+  --easy-color-android: rgb(150, 193, 61);
+  --easy-color-ios: rgba(0, 0, 0, 0.25);
+  --easy-color-quickapp: #4286f5;
+  --easy-color-h5: #e44d26;
+  --easy-color-harmony: #d40000;
+
+  --easy-background-white-soft: var(--vt-c-white-soft);
+  --easy-background-white-mute: var(--vt-c-white-mute);
+  --easy-background-black-soft: var(--vt-c-black-soft);
+  --easy-background-black-mute: var(--vt-c-black-mute);
+  --easy-background-gray: var(--vt-c-gray);
+}
+
+// element-ui variable
+:root {
+  --el-menu-item-height: 42px !important;
+}
+
+:root {
+  --easy-label-width: 80px;
+  --easy-menu-width: 220px;
+  --easy-menu-width-mini: 64px;
+  --easy-header-height: 48px;
+  --easy-width-10: 10px;
+  --easy-width-100: 100px;
+  --easy-width-120: 120px;
+  --easy-width-140: 140px;
+  --easy-height-10: 10px;
+  --easy-height-32: 32px;
+  --easy-height-34: 34px;
+  --easy-height-40: 40px;
+  --easy-height-42: 42px;
+  --easy-tooltip-width: 340px;
+  --easy-base-space: 10px;
+  --easy-border-width: 1px;
+  --easy-border-radius: 10px;
+
+  --easy-font-12: 12px;
+  --easy-font-14: 14px;
+  --easy-font-16: 16px;
+  --easy-font-18: 18px;
+  --easy-font-24: 24px;
+  --easy-font-28: 28px;
+  --easy-font-32: 32px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-white-soft: var(--vt-c-black-soft);
+    --color-background-white-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
