@@ -8,38 +8,22 @@ export const renderElInputWidget = {
   componentName: 'el-input',
   properties: {
     placeholder: ENTER_PLACEHOLDER,
-    class: 'easy-input'
-  }
+    class: 'easy-input',
+  },
 }
 
 // 通用开关部件
 export const renderSwitchWidget = {
   componentName: 'EasySwitch',
   properties: {
-    ...SWITCH_VALUE
-  }
-}
-
-// TODO: 可将此封装成一个组件（增强器），暂时先当作部件使用
-export const renderAutoCreateUnitWidget = {
-  formItemProps: {
-    label: 'firm.autoCreateUnit'
+    ...SWITCH_VALUE,
   },
-  componentProps: {
-    componentName: () => {
-      return (
-        <el-link type="primary" underline={false}>
-          按钮
-        </el-link>
-      )
-    }
-  }
 }
 
-export function renderReadonlyWidget () {
+export function renderReadonlyWidget() {
   return {
     componentName: (scope: any) => {
       return <div>{scope.modelValue || '-'}</div>
-    }
+    },
   }
 }
