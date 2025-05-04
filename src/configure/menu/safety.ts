@@ -4,6 +4,7 @@ export default {
   parentPath: '/',
   redirect: '/safety/mandatory',
   icon: '',
+  menu: true,
   order: 70,
   children: [
     {
@@ -11,18 +12,21 @@ export default {
       name: 'mandatory',
       parentPath: '/safety',
       icon: '',
+      menu: true,
     },
     {
       path: 'rule',
       name: 'rule',
       parentPath: '/safety',
       icon: '',
+      menu: true,
     },
     {
       path: 'secret',
       name: 'secret',
       parentPath: '/safety',
       icon: '',
+      menu: true,
     },
   ],
 }

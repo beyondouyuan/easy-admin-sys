@@ -5,6 +5,7 @@ export default {
   parentPath: '/',
   redirect: '/task/personal',
   icon: '',
+  menu: true,
   order: 20,
   children: [
     {
@@ -12,24 +13,28 @@ export default {
       name: 'personal',
       parentPath: '/task',
       icon: '',
+      menu: true,
     },
     {
       path: 'scan',
       name: 'scan',
       parentPath: '/task',
       icon: '',
+      menu: true,
     },
     {
       path: 'history',
       name: 'history',
       parentPath: '/task',
       icon: '',
+      menu: true,
     },
     {
       path: 'profile',
       name: 'profile',
       parentPath: '/task',
       icon: '',
+      menu: true,
     },
   ],
 }

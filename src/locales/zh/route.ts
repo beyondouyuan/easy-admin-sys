@@ -8,6 +8,7 @@ export default {
     cockpit: '大屏展示',
     printed: '印量看板',
     device: '设备看板',
+    deviceDetail: '设备看板详情',
   },
   task: {
     title: '我的作业',

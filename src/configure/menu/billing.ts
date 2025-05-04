@@ -4,6 +4,7 @@ export default {
   parentPath: '/',
   redirect: '/billing/standard',
   icon: '',
+  menu: true,
   order: 60,
   children: [
     {
@@ -11,12 +12,14 @@ export default {
       name: 'standard',
       parentPath: '/billing',
       icon: '',
+      menu: true,
     },
     {
       path: 'rule',
       name: 'rule',
       parentPath: '/billing',
       icon: '',
+      menu: true,
     },
   ],
 }

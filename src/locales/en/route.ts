@@ -8,6 +8,7 @@ export default {
     cockpit: 'Cockpit Board',
     printed: 'Printed Board',
     device: 'Device Board',
+    deviceDetail: 'Detail',
   },
   task: {
     title: 'Task',

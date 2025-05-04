@@ -3,27 +3,43 @@ export default {
   name: 'signboard',
   parentPath: '/',
   redirect: '/signboard/system',
+  menu: true,
   order: 10,
   children: [
     {
       path: 'system',
       name: 'system',
       parentPath: '/signboard',
+      icon: '',
+      menu: true,
     },
     {
       path: 'cockpit',
       name: 'cockpit',
       parentPath: '/signboard',
+      icon: '',
+      menu: true,
     },
     {
       path: 'printed',
       name: 'printed',
       parentPath: '/signboard',
+      icon: '',
+      menu: true,
     },
     {
       path: 'device',
       name: 'device',
       parentPath: '/signboard',
+      icon: '',
+      menu: true,
+    },
+    {
+      path: 'device/detail',
+      name: 'detail',
+      parentPath: '/signboard/device',
+      icon: '',
+      menu: false,
     },
   ],
 }

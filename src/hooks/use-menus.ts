@@ -20,8 +20,12 @@ function ensureParent(path: string) {
   return path.startsWith('/') ? path.slice(1) : path
 }
 
+function ensurePathName(name: string) {
+  return name.replace(/^./, (match) => match.toUpperCase())
+}
+
 function ensureTitle(item: any, level: number) {
-  const { parentPath, name, root, children = [] } = item
+  const { parentPath, name, menu, children = [] } = item
   const dim = ensureParent(parentPath)
   let title = ''
   if (level === 0) {
@@ -30,7 +34,9 @@ function ensureTitle(item: any, level: number) {
     if (children.length > 0) {
       title = `route.${dim.split('/').join('.')}.${name}.title`
     } else {
-      title = `route.${dim.split('/').join('.')}.${name}`
+      title = menu
+        ? `route.${dim.split('/').join('.')}.${name}`
+        : `route.${dim.split('/').join('.')}${ensurePathName(name)}`
     }
   }
   return title

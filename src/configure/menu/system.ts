@@ -4,6 +4,7 @@ export default {
   parentPath: '/',
   redirect: '/system/log',
   icon: '',
+  menu: true,
   order: 80,
   children: [
     {
@@ -11,36 +12,42 @@ export default {
       name: 'log',
       parentPath: '/system',
       icon: '',
+      menu: true,
     },
     {
       path: 'params',
       name: 'params',
       parentPath: '/system',
       icon: '',
+      menu: true,
     },
     {
       path: 'menu',
       name: 'menu',
       parentPath: '/system',
       icon: '',
+      menu: true,
     },
     {
       path: 'mail',
       name: 'mail',
       parentPath: '/system',
       icon: '',
+      menu: true,
     },
     {
       path: 'customization',
       name: 'customization',
       parentPath: '/system',
       icon: '',
+      menu: true,
     },
     {
       path: 'authorization',
       name: 'authorization',
       parentPath: '/system',
       icon: '',
+      menu: true,
     },
   ],
 }

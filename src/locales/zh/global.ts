@@ -6,4 +6,6 @@ export default {
   include: '包括',
   exclude: '不包括',
   all: '全选',
+  confirm: '确认',
+  submit: '提交',
 }

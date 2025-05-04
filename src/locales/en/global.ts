@@ -6,4 +6,6 @@ export default {
   include: 'Include',
   exclude: 'Exclude',
   all: 'All',
+  confirm: 'Confirm',
+  submit: 'Submit',
 }
