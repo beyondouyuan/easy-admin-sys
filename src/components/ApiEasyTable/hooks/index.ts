@@ -4,8 +4,11 @@ import server from '@/shared/http'
 import useColumns from '@/hooks/use-table/columns'
 import type { ITable } from '@/interfaces/table'
 
+const loadingExpected = 500
+
 export default function useTable(props: ITable.IApiTableProps) {
   const loading = ref(false)
+  const requestStart = ref(Date.now())
   const page = reactive({
     current: 1, // 当前页码
     total: 0, // 当前总共记录条数
@@ -29,10 +32,19 @@ export default function useTable(props: ITable.IApiTableProps) {
   }
 
   function ensureResponse(response: any) {
-    updateLoading(false)
+    const requestEnd = Date.now()
+    const duration = requestEnd - requestStart.value
+    // loading过短，延时一下以便展示过渡动画
+    if (duration < loadingExpected) {
+      setTimeout(() => {
+        updateLoading(false)
+      }, loadingExpected - duration)
+    } else {
+      updateLoading(false)
+    }
     if (response.code > 0) {
       console.error(`Server Error: ${response.message ?? response.msg}`)
-      loading.value = false
+      updateLoading(false)
       return
     }
     const { list, header = [], total = 1 } = response.data
@@ -57,6 +69,7 @@ export default function useTable(props: ITable.IApiTableProps) {
   }
 
   async function fetchData() {
+    requestStart.value = Date.now()
     updateLoading(true)
     const params = ensureParams()
     const payload = {

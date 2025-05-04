@@ -1,7 +1,14 @@
 // 路由
 export default {
   dashboard: 'Dashboard',
-  demo: 'Demo',
+  demo: {
+    title: 'Example',
+    table: 'EasyTable',
+    'api-table': 'ApiEasyTable',
+    form: 'EasyFrom',
+    search: 'EasySearch',
+    'api-search': 'ApiEasySearch',
+  },
   signboard: {
     title: 'Board',
     system: 'System Board',

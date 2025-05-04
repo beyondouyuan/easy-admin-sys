@@ -1,7 +1,14 @@
 // 路由
 export default {
   dashboard: '首页',
-  demo: '演示',
+  demo: {
+    title: '示例',
+    table: 'EasyTable',
+    'api-table': 'ApiEasyTable',
+    form: 'EasyFrom',
+    search: 'EasySearch',
+    'api-search': 'ApiEasySearch',
+  },
   signboard: {
     title: '看板',
     system: '系统看板',
